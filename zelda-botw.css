@@ -17,6 +17,8 @@ body * {
   src: url("./HyliaSerifBeta-Regular.otf");
 }
 
+/* Symbols */
+
 i.symbol:before {
   font-family: 'Hylian symbols';
   font-size: inherit;
