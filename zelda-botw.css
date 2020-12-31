@@ -1,0 +1,48 @@
+/* Body */
+
+body * {
+  font-family: 'Hylia serif';
+}
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Hylian symbols';
+  src: url("./HylianSymbols.ttf");
+}
+
+@font-face {
+  font-family: 'Hylia serif';
+  src: url("./HyliaSerifBeta-Regular.otf");
+}
+
+i.symbol:before {
+  font-family: 'Hylian symbols';
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: normal;
+}
+
+i.symbol.force:before { content: "a"; }
+i.symbol.triforce:before { content: "b"; }
+i.symbol.pending1:before { content: "c"; }
+i.symbol.eye:before { content: "d"; }
+i.symbol.pending2:before { content: "e"; }
+i.symbol.sheikah:before { content: "f"; }
+i.symbol.gerudo:before { content: "g"; }
+i.symbol.kokiri:before { content: "h"; }
+i.symbol.zora:before { content: "i"; }
+i.symbol.goron:before { content: "j"; }
+i.symbol.royalcrest:before { content: "k"; }
+i.symbol.din:before { content: "l"; }
+i.symbol.farore:before { content: "m"; }
+i.symbol.nayru:before { content: "n"; }
+i.symbol.light:before { content: "o"; }
+i.symbol.forest:before { content: "p"; }
+i.symbol.water:before { content: "q"; }
+i.symbol.spirit:before { content: "r"; }
+i.symbol.shadow:before { content: "s"; }
+
+/* section */
