@@ -2,7 +2,6 @@
 :root {
   --color-zelda-green: #008000;
   --color-gold: #ffbf00;
-  --ruppe-size: 30px;
 }
 
 body {
@@ -168,3 +167,54 @@ i.symbol.shadow:before { content: "s"; }
   border-right: calc(var(--size) * ((1 - var(--carat)) / 2)) solid var(--color-fiveth);
 }
 
+
+
+/* effects */
+
+.botw .stoned {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+  background: linear-gradient(to right, rgb(17 139 116) 0%, #00a98b 100%);
+  padding: 17px 10px 10px;
+  display: block;
+  border: 20px solid #118b74;
+  border-right: 20px solid #09bc9b;
+  border-bottom: 20px solid #139f86;
+  border-left: 20px solid #0e5145;
+  clip-path: polygon(1% 7%, 15% 0%, 20% 4%, 50% 0%, 97% 0%, 100% 11%, 100% 97%, 97% 100%, 50% 95%, 45% 97%, 2% 100%, 0% 94%);
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  border-top-left-radius: 31px;
+  border-bottom-right-radius: 14px;
+  margin: 0px auto;
+}
+
+.botw .stoned * {
+  color: #28796a;
+}
+
+.botw .stoned:before {
+  content: " ";
+  display: block;
+  height: 40px;
+  width: 40px;
+  bottom: -11px;
+  left: -11px;
+  background-color: #0e705d;
+  position: absolute;
+  clip-path: polygon(27% 0%, 100% 74%, 9% 93%);
+}
+
+.botw .stoned:after {
+  content: " ";
+  display: block;
+  height: 40px;
+  width: 56px;
+  right: -11px;
+  top: -11px;
+  background-color: #139f86;
+  position: absolute;
+  clip-path: polygon(23% 27%, 89% 18%, 81% 79%);
+}
