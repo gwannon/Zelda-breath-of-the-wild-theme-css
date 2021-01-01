@@ -220,14 +220,14 @@ i.symbol.shadow:before { content: "s"; }
 }
 
 .botw .stoned .glowing {
-  animation-name: glowing;
+  animation-name: glowingstone;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-direction: alternate;
 }
 
-@keyframes glowing {
+@keyframes glowingstone {
   0% {
     text-shadow: inherit;
   }
@@ -238,5 +238,25 @@ i.symbol.shadow:before { content: "s"; }
   100% {
     color: var(--color-energy);
     text-shadow: 0px 1px 0px var(--color-energy), 0px -1px 0px var(--color-energy);
+  }
+}
+
+.glowing {
+  animation-name: glowing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes glowing {
+
+  75% {
+    color: var(--color-energy);
+    text-shadow: 0px 0px 5px var(--color-energy);
+  }
+  100% {
+    color: var(--color-energy);
+    text-shadow: 0px 0px 5px var(--color-energy);
   }
 }
