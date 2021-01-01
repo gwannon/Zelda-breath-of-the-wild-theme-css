@@ -48,9 +48,9 @@ i.symbol:before {
 
 i.symbol.force:before { content: "a"; }
 i.symbol.triforce:before { content: "b"; }
-i.symbol.pending1:before { content: "c"; }
+i.symbol.drop1:before { content: "c"; }
 i.symbol.eye:before { content: "d"; }
-i.symbol.pending2:before { content: "e"; }
+i.symbol.drop2:before { content: "e"; }
 i.symbol.sheikah:before { content: "f"; }
 i.symbol.gerudo:before { content: "g"; }
 i.symbol.kokiri:before { content: "h"; }
