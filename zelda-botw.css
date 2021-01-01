@@ -69,7 +69,8 @@ i.symbol.shadow:before { content: "s"; }
 /* Rupees */
 
 .rupee {
-  --size: var(--ruppe-size);
+  --font-size: 24px;
+  --size: calc(var(--font-size) / var(--ratio));
   --ratio: 2; /* 15px */
   --carat: 0.7;
   --color-main: red;
