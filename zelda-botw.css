@@ -2,6 +2,7 @@
 :root {
   --color-zelda-green: #008000;
   --color-gold: #ffbf00;
+  --color-energy: #10e7c0;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
 
 body * {
   font-family: 'Hylia serif';
-  color: var(--color-gold);
 }
 input[type=text] {
   border: 1px solid #000;
@@ -217,4 +217,26 @@ i.symbol.shadow:before { content: "s"; }
   background-color: #139f86;
   position: absolute;
   clip-path: polygon(23% 27%, 89% 18%, 81% 79%);
+}
+
+.botw .stoned .glowing {
+  animation-name: glowing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: inherit;
+  }
+  75% {
+    color: var(--color-energy);
+    text-shadow: 0px 1px 0px var(--color-energy), 0px -1px 0px var(--color-energy);
+  }
+  100% {
+    color: var(--color-energy);
+    text-shadow: 0px 1px 0px var(--color-energy), 0px -1px 0px var(--color-energy);
+  }
 }
