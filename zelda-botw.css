@@ -1,9 +1,27 @@
 /* Body */
+:root {
+  --color-zelda-green: #008000;
+  --color-gold: #ffbf00;
+}
+
+body {
+  background-color:var(--color-zelda-green);
+  padding: 0px;
+  margin: 0px;
+}
 
 body * {
   font-family: 'Hylia serif';
+  color: var(--color-gold);
+}
+input[type=text] {
+  border: 1px solid #000;
+  color: #000;
 }
 
+section.botw {
+  padding: 30px 60px;
+}
 
 /* Fonts */
 
@@ -47,4 +65,80 @@ i.symbol.water:before { content: "q"; }
 i.symbol.spirit:before { content: "r"; }
 i.symbol.shadow:before { content: "s"; }
 
-/* section */
+/* rupees */
+
+.rupee {
+  --size: 40px;
+  --color-main: red;
+  --color-second: #660808;
+  --color-third: #9c0a0a;
+  --color-fourth: #ff3c3c;
+  --color-fiveth:  #7d1818;
+  position: relative;
+  width: var(--size);
+  height: calc(var(--size) * 2);
+  background: linear-gradient(90deg, var(--color-main) 0%, var(--color-main) 50%,var(--color-third) 50.01%, var(--color-third) 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: inline-block;
+}
+
+.rupee.green {
+  --color-main:#73a925;
+  --color-second:#90ce11;
+  --color-third:#678c40;
+  --color-fourth: #8cbb2a;
+  --color-fiveth:  #437d0c;
+}
+
+.rupee.blue {
+  --color-main: #0e299a;
+  --color-second: #142c9a;
+  --color-third: #23479a;
+  --color-fourth: #0f275a;
+  --color-fiveth:  #18627d;
+}
+
+.rupee.purple {
+  --color-main: purple;
+  --color-second:#3c0866;
+  --color-third: #430a9c;
+  --color-fourth: #b13cff;
+  --color-fiveth:  #541294;
+}
+
+.rupee.yellow {
+  --color-main: yellow;
+  --color-second: #d2c119;
+  --color-third: #9c910a;
+  --color-fourth: #ffc03c;
+  --color-fiveth:  #7b6415;
+}
+
+.rupee:before {
+  content: " ";
+  position: absolute;
+  top: calc(var(--size) * 0.30);
+  left: calc(var(--size) * 0.15);
+  width: calc(var(--size) * 0.7);
+  height: calc(var(--size) * 2 * 0.7);
+  background-color:var(--color-second);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: block;
+  z-index: 10
+}
+
+.rupee:after {
+  content: " ";
+  position: absolute;
+  top: calc(var(--size) * 0.5);
+  left: 0px;
+  width: calc(var(--size) - ((var(--size) * 0.15) * 2));
+  height: calc(var(--size) - ((var(--size) * 0.15) * 2));
+  background-color: transparent;
+  display: block;
+  z-index: 5;
+  border-top: calc(var(--size) * 0.15) solid transparent;
+  border-bottom: calc(var(--size) * 0.15) solid transparent;
+  border-left: calc(var(--size) * 0.15) solid var(--color-fourth);
+  border-right: calc(var(--size) * 0.15) solid var(--color-fiveth);
+}
