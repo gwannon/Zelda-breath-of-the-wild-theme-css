@@ -71,7 +71,7 @@ i.symbol.shadow:before { content: "s"; }
 .rupee {
   --font-size: 24px;
   --size: calc(var(--font-size) / var(--ratio));
-  --ratio: 2; /* 15px */
+  --ratio: 1.5; /* 15px */
   --carat: 0.7;
   --color-main: red;
   --color-second: #660808;
@@ -86,12 +86,12 @@ i.symbol.shadow:before { content: "s"; }
   display: inline-block;
 }
 
-.rupee.short {
-  --ratio: 1.5;
+.rupee.thin {
+  --ratio: 2;
 }
 
 
-.rupee.extrashort {
+.rupee.broad {
   --ratio: 1.2;
 }
 
@@ -144,11 +144,11 @@ i.symbol.shadow:before { content: "s"; }
   --border: calc((var(--size) * var(--ratio)) / 13.33); /* TODO: how to calcualte this */
 }
 
-.rupee.short:after {
+.rupee.thin:after {
   --border: calc((var(--size) * var(--ratio)) / 15); /* TODO: how to calcualte this */
 }
 
-.rupee.extrashort:after {
+.rupee.broad:after {
   --border: calc((var(--size) * var(--ratio)) / 16); /* TODO: how to calcualte this */
 }
 
