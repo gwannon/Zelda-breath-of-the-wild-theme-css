@@ -264,7 +264,7 @@ i.symbol.shadow:before { content: "s"; }
 /* Sheikah alphabet */
 
 i.alphabet:before {
-  content: "\0025FC";
+  content: "\2588";
   font-family: 'Times', 'Times New Roman', 'serif', 'sans-serif', 'EmojiSymbols', 'apple color emoji';
   font-style: normal;
   display: inline-block;
@@ -278,10 +278,14 @@ i.alphabet.a:before {
 i.alphabet.g:before {
   clip-path: polygon(12% 78%, 56% 78%, 56% 54%, 45% 54%, 45% 62%, 34% 70%, 23% 70%, 12% 62%, 12% 38%, 23% 30%, 78% 30%, 89% 38%, 89% 78%, 78% 85%, 78% 38%, 23% 38%, 23% 62%, 34% 62%, 34% 54%, 45% 46%, 56% 46%, 67% 54%, 67% 78%, 56% 85%, 23% 85%);
 }
+
 i.alphabet.exclamation:before {
   clip-path: polygon(23% 30%, 12% 38%, 12% 78%, 23% 85%, 45% 85%, 56% 78%, 56% 38%, 78% 38%, 78% 85%, 89% 78%, 89% 38%, 78% 30%, 56% 30%, 45% 38%, 45% 78%, 23% 78%);
 }
 
+i.alphabet.spot:before {
+  clip-path: polygon(23% 30%, 78% 30%, 89% 38%, 89% 85%, 78% 85%, 78% 38%, 23% 38%, 23% 78%, 45% 78%, 45% 54%, 56% 54%, 56% 78%, 45% 85%, 23% 85%, 12% 78%, 12% 38%)
+}
 /*
 
 12% 30%      77% / 11% step       89% 30%
