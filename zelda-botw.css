@@ -72,15 +72,21 @@ i.symbol.shadow:before { content: "s"; }
   --size: calc(var(--font-size) / var(--ratio));
   --ratio: 1.5; /* 15px */
   --carat: 0.7;
-  --color-main: red;
+  --color-main: #711414;
   --color-second: #660808;
   --color-third: #9c0a0a;
-  --color-fourth: #ff3c3c;
-  --color-fiveth:  #7d1818;
+  --color-fourth: #ff2525;
+  --color-fiveth: #7d1818;
   position: relative;
   width: var(--size);
   height: calc(var(--size) * var(--ratio));
-  background: linear-gradient(90deg, var(--color-main) 0%, var(--color-main) 50%,var(--color-third) 50.01%, var(--color-third) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-third) 0%,
+    var(--color-main) 50%,
+    var(--color-third) 50.01%,
+    var(--color-second) 100%
+  );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: inline-block;
 }
@@ -133,7 +139,11 @@ i.symbol.shadow:before { content: "s"; }
   left: calc(var(--size) * ((1 - var(--carat)) / 2));
   width: calc(var(--size) * var(--carat));
   height: calc(var(--size) * var(--ratio) * var(--carat));
-  background-color:var(--color-second);
+  background: linear-gradient(
+    90deg,
+    var(--color-third) 0%,
+    var(--color-fourth) 100%
+  );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: block;
   z-index: 10
@@ -297,7 +307,15 @@ i.alphabet.exclamation:before {
 }
 
 i.alphabet.spot:before {
-  clip-path: polygon(23% 30%, 78% 30%, 89% 38%, 89% 85%, 78% 85%, 78% 38%, 23% 38%, 23% 78%, 45% 78%, 45% 54%, 56% 54%, 56% 78%, 45% 85%, 23% 85%, 12% 78%, 12% 38%)
+  clip-path: polygon(23% 30%, 78% 30%, 89% 38%, 89% 85%, 78% 85%, 78% 38%, 23% 38%, 23% 78%, 45% 78%, 45% 54%, 56% 54%, 56% 78%, 45% 85%, 23% 85%, 12% 78%, 12% 38%);
+}
+
+i.alphabet.hyphen:before {
+  clip-path: polygon(12% 30%, 78% 30%, 89% 38%, 89% 54%, 78% 62%, 23% 62%, 23% 78%, 89% 78%, 89% 85%, 78% 85%, 78% 78%, 56% 78%, 56% 85%, 23% 85%, 12% 78%, 12% 62%, 23% 54%, 78% 54%, 78% 38%, 45% 38%, 45% 30%, 23% 30%, 23% 38%, 12% 38%);
+}
+
+i.alphabet.one:before {
+  clip-path: polygon(23% 85%, 12% 78%, 12% 38%, 23% 30%, 56% 30%, 78% 30%, 89% 38%, 89% 78%, 78% 85%, 45% 85%, 45% 54%, 56% 54%, 56% 62%, 45% 62%, 45% 78%, 78% 78%, 78% 30%, 56% 30%, 56% 38%, 23% 38%)
 }
 
 
