@@ -64,6 +64,7 @@ i.symbol.forest:before { content: "p"; }
 i.symbol.water:before { content: "q"; }
 i.symbol.spirit:before { content: "r"; }
 i.symbol.shadow:before { content: "s"; }
+i.symbol.heart:before { content: "\2764"; /*  \2665 \2661 */ }	
 
 /* Rupees */
 
