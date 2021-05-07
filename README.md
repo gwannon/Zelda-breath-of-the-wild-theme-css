@@ -3,7 +3,6 @@
 This is a theme in CSS3 with resources inspired Legend of Zelda: Breath of the wild.
 
 # Examples
-* All examples https://theflash.gwannon.com/Zelda-breath-of-the-wild-theme-css/test.html
 * Symbols https://codepen.io/gwannon/pen/YzGeOxV
 * Rupees https://codepen.io/gwannon/pen/MWjQLxm
 * Sheikah alphabet https://codepen.io/gwannon/pen/yLaKVmM
